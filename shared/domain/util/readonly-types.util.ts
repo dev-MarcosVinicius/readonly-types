@@ -14,4 +14,8 @@ export class ReadOnlyUtil {
         const [first, second] = tuple;
         return [second, first];
     }
+
+    static async fetchJSON(url: string, method: HTTPRequestMethod) {
+        return await fetch(url, { method })
+    }
 }

@@ -48,7 +48,11 @@ export class AppService {
      * ORIGIN[0] = 1;
      */
 
-    
 
+
+  }
+
+  getJSON() {
+    return ReadOnlyUtil.fetchJSON("https://example.com/", HTTPRequestMethod.GET)
   }
 }
