@@ -9,5 +9,9 @@ export class ReadOnlyUtil {
         }
         return newArray;
     }
-    
+
+    static swapx<T, U>(tuple: readonly [T, U]): [U, T] {
+        const [first, second] = tuple;
+        return [second, first];
+    }
 }
