@@ -9,7 +9,7 @@ export class AppService {
     return ReadOnlyUtil.intersperse(values, "X");
   }
 
-  getHello() {
+  getSwapValue() {
     const keyValuePairx: readonly [number, string] = [1, "one"];
 
     return ReadOnlyUtil.swapx(keyValuePairx);
