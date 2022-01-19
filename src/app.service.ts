@@ -26,5 +26,29 @@ export class AppService {
      * this atribuition return error
      * ASSERTION.key1 = 2;
      */
+
+    // this is a array using const assertion
+    const ORIGIN: readonly [0, 0] = [0, 0];
+    // and array of arrays using const assertion
+    const digitNames = [
+      [0, "zero"],
+      [1, "one"],
+      [2, "two"],
+      [3, "three"],
+      [4, "four"],
+      [5, "five"],
+      [6, "six"],
+      [7, "seven"],
+      [8, "eight"],
+      [9, "nine"],
+    ] as const;
+
+    /**
+     * this atribuition return error
+     * ORIGIN[0] = 1;
+     */
+
+    
+
   }
 }
