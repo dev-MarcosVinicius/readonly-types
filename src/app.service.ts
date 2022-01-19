@@ -14,4 +14,17 @@ export class AppService {
 
     return ReadOnlyUtil.swapx(keyValuePairx);
   }
+
+  useConstAssertions() {
+    // this is a object using const assertion
+    const ASSERTION = {
+      key1: 0,
+      key2: 0
+    } as const;
+
+    /**
+     * this atribuition return error
+     * ASSERTION.key1 = 2;
+     */
+  }
 }
