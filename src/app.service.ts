@@ -1,8 +1,11 @@
 import { Injectable } from '@nestjs/common';
+import { ReadOnlyUtil } from 'shared/domain/util/readonly-types.util';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  getHello() {
+    const values: readonly string[] = ["A", "B", "C"];
+
+    return ReadOnlyUtil.intersperse(values, "X");
   }
 }
